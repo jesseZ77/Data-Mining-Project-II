@@ -78,8 +78,8 @@ def stack_ensemble_predictions(ticker, problem_type):
 
 
 def load_stack_data(ticker, problem_type):
-    X_train_stack = np.loadtxt(f"data/{ticker}/X_train_{problem_type}.txt")
-    X_test_stack = np.loadtxt(f"data/{ticker}/X_test_{problem_type}.txt")
+    X_train_stack = np.loadtxt(f"data/{ticker}/X_train_stack_{problem_type}.txt")
+    X_test_stack = np.loadtxt(f"data/{ticker}/X_test_stack_{problem_type}.txt")
     y_train = np.loadtxt(f"data/{ticker}/y_train_{problem_type}.txt")
     y_test = np.loadtxt(f"data/{ticker}/y_test_{problem_type}.txt")
 

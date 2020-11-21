@@ -41,7 +41,7 @@ def make_datasets(ticker, n_trailing=20, n_step_ahead=5, test_size=0.3,
     for k, v in return_splits.items():
         X = np.array([v[x: x + n_trailing]
                       for x in range(len(v) - n_trailing - n_step_ahead + 1)])
-        np.savetxt(f"data/{ticker}/X_{k}.txt", X)
+        np.savetxt(f"data/{ticker}/X_{k}_.txt", X)
 
         y_raw = np.array([v[x + n_trailing: x + n_trailing + n_step_ahead]
                           for x in range(len(v) - n_trailing - n_step_ahead + 1)])
