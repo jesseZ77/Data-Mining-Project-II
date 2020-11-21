@@ -61,7 +61,7 @@ def make_datasets(ticker, n_trailing=20, n_step_ahead=5, test_size=0.3,
         if make_multistep:
             np.savetxt(f"data/{ticker}/y_{k}_multistep.txt", y_raw)
 
-        return down_cut, up_cut
+    return down_cut, up_cut
 
 
 def main():
